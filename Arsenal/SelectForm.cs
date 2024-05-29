@@ -128,7 +128,7 @@ namespace Arsenal
                 btn.Location = new Point(338, y + 100);
                 btn.Size = new Size(200, 30);
                 btn.Text = gun.name;
-                btn.Click += new EventHandler(Form1.carClick);
+                btn.Click += new EventHandler(Form1.gunClick);
                 infopanel.Controls.Add(btn);
                 #endregion
 

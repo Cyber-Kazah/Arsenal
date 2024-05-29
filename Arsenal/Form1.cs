@@ -72,7 +72,7 @@ namespace Arsenal
             
         }
 
-        public static void carClick(object sender, EventArgs e)
+        public static void gunClick(object sender, EventArgs e)
         {
             for(int i = 0; i < gun_list.Count; i++)
             {
@@ -110,7 +110,7 @@ namespace Arsenal
             {
                 gun_list[i].btn.Location = new Point(x, y);
                 gun_list[i].btn.Size = new Size(270, 62);
-                gun_list[i].btn.Click += new EventHandler(carClick);
+                gun_list[i].btn.Click += new EventHandler(gunClick);
                 ViewPanel.Controls.Add(gun_list[i].btn);
 
                 gun_list[i].pic.Location = new Point(x, y + 70);
